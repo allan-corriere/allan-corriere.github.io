@@ -1,11 +1,64 @@
+html,
+body {
+    margin: 0;
+    font-family: "Nunito Sans", serif;
+}
+
 nav {
     display: flex;
+    align-content: center;
+    width: 100%;
 
     ul {
         display: flex;
+        gap: 4em;
+        align-content: baseline;
+        width: 100%;
 
         li {
             list-style-type: none;
+
+            &:hover {
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    width: calc(100% / 2);
+    margin: auto;
+    height: 100%;
+}
+
+.work-exp {
+    span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+
+    main {
+        min-height: 100vh;
+    }
+
+    article {
+        min-height: 100vh;
     }
 }
